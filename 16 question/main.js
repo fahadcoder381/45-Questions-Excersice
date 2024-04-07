@@ -1,0 +1,12 @@
+var guestlist = ["altaf bhai", " Anwar Alam ", " Arif Massih  ", "Arshad Abdullah Vohra  "];
+var dontcome = guestlist[3];
+console.log(dontcome, "nhi a raha ho");
+guestlist.splice(3, 3, " Abdul Rauf Siddiqui ");
+console.log("good new ! we have a found begger table");
+guestlist.unshift("ali baba");
+guestlist.push("Abdul Haseeb");
+var middleindex = (guestlist.length / 2);
+guestlist.splice(middleindex, 2, " Fahim Ahmed  ");
+console.log("updated list of our guests ");
+guestlist.forEach(function (oneguest) { return console.log("salam".concat(oneguest, " would you like nigth dinner with me? ")); });
+guestlist.forEach(function (guest) { return console.log("salam ".concat(guest, " would you like to dinner with me?")); });
